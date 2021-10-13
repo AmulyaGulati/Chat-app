@@ -7,6 +7,7 @@ const config = {
   storageBucket: 'chat-web-app-ebca8.appspot.com',
   messagingSenderId: '978358535847',
   appId: '1:978358535847:web:29e6c0873726ad613e7d82',
+  databaseURL: "URL_FROM_DASHBOARD"
 };
 
 const app = firebase.initializeApp(config);
