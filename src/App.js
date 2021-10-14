@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react';
 
-// import 'rsuite/dist/rsuite.min.css';
+import 'rsuite/dist/styles/rsuite-default.min.css';
 import './styles/main.scss';
 import { Switch } from 'react-router';
 import SignIn from './pages/SignIn';
