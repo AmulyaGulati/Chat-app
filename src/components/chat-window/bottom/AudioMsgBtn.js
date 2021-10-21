@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import { Alert, Icon, InputGroup } from 'rsuite';
 import { ReactMic } from 'react-mic';
-import { useCallback, useState } from 'react/cjs/react.development';
 import { useParams } from 'react-router';
 import { storage } from '../../../misc/firebase';
 

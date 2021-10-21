@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router';
-import { useState } from 'react/cjs/react.development';
 import { Alert, Button, Icon, InputGroup, Modal, Uploader } from 'rsuite';
 import { useModalState } from '../../../misc/custom-hooks';
 import { storage } from '../../../misc/firebase';

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useCallback } from 'react/cjs/react.development';
+import React, { useState, useCallback } from 'react';
 import { Alert, Icon, Input, InputGroup } from 'rsuite';
 
 const EditableInput = ({
