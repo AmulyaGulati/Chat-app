@@ -1,70 +1,12 @@
-# Getting Started with Create React App
+# Real World React Chat App using FirebaseApp Database
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. User has to authentify himself/herself by signing with his/her Facebook or Google account to connect to the real world chat application.
+2. User can click on Dashboard button to view his/her personal details where he/she can update his/her nickname and profile avatar. User has option to connect with multiple accounts. If he/she is already connected to Facebook, then he/she can also link to Google and vice versa. User can sign out anytime and re-login to his/her account using same credentials as before.
+3. User can create new chat room by specifying name and description. Only the admin of a particular room has the authority to access the Editable Drawer (represented by letter A in red color) and edit the room details. Other users can only view room information by clicking on Room Information button.
+4. User can see each other's current status represented by the dot. Green dot represents that the user is currently active/online, red dot represents that user is currently offline and when he/she was last online. There is also a gray dot in case if the status of that particular user is unknown.
+5. User can send text messages by typing in the message box below and pressing ENTER. User can also attach files (images or pdfs) of max-size 5MB and maximum 5 at a time, by clicking on attachment button. User can also send audio recording by clicking on microphone button to start recording and releasing it to send the audio.
+6. User can also add/remove likes for a particular message, like Facebook or Instagram and can also see number of likes on a particular message.  Like option is represented by a heart which is accessed by hovering on a given message.
+7. User can also delete his/her message if he/she feels it as inappropriate by clicking on cross (X) button, which like like button, is also accessed by hovering on a given message. On clicking delete button, user is asked whether he/she is sure that he/she wants to delete that message. User has to confirm OK to delete that message. Users can delete his/her messages only, not each others.
+8. User can at a given time, can view only at the most 15 messages at a time in a particular room. To view more messages, he/she has to click on Load more button. User is automatically scrolled down, whenever he/she adds new message.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://chat-web-app-ebca8.firebaseapp.com/signin
