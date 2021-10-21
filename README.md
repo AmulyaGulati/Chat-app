@@ -1,4 +1,4 @@
-# Real World React Chat App using FirebaseApp Database
+# Real World React Chat App using FirebaseApp Platform
 
 1. User has to authentify himself/herself by signing with his/her Facebook or Google account to connect to the real world chat application.
 2. User can click on Dashboard button to view his/her personal details where he/she can update his/her nickname and profile avatar. User has option to connect with multiple accounts. If he/she is already connected to Facebook, then he/she can also link to Google and vice versa. User can sign out anytime and re-login to his/her account using same credentials as before.
