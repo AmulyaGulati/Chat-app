@@ -9,4 +9,4 @@
 7. User can also delete his/her message if he/she feels it as inappropriate by clicking on cross (X) button, which like like button, is also accessed by hovering on a given message. On clicking delete button, user is asked whether he/she is sure that he/she wants to delete that message. User has to confirm OK to delete that message. Users can delete his/her messages only, not each others.
 8. User can at a given time, can view only at the most 15 messages at a time in a particular room. To view more messages, he/she has to click on Load more button. User is automatically scrolled down, whenever he/she adds new message.
 
-https://chat-web-app-ebca8.firebaseapp.com/signin
+https://chat-web-app-ebca8.firebaseapp.com
