@@ -1,6 +1,8 @@
 /* eslint-disable no-undef */
-import { initializeApp } from 'firebase/app';
-import { getMessaging } from 'firebase/messaging';
+importScripts('https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js');
+importScripts(
+  'https://www.gstatic.com/firebasejs/7.15.0/firebase-messaging.js'
+);
 
 const firebaseApp = initializeApp({
   apiKey: 'AIzaSyDYddupMWra5vmun6udJvtrH8k1FkgifA8',
@@ -12,7 +14,7 @@ const firebaseApp = initializeApp({
   databaseURL: 'https://chat-web-app-ebca8-default-rtdb.firebaseio.com/',
 });
 
-getMessaging(firebaseApp);
+firebaseApp.messaging();
 
 export const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
