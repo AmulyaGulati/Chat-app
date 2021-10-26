@@ -8,5 +8,6 @@
 6. User can also add/remove likes for a particular message, like Facebook or Instagram and can also see number of likes on a particular message.  Like option is represented by a heart which is accessed by hovering on a given message.
 7. User can also delete his/her message if he/she feels it as inappropriate by clicking on cross (X) button, which like like button, is also accessed by hovering on a given message. On clicking delete button, user is asked whether he/she is sure that he/she wants to delete that message. User has to confirm OK to delete that message. Users can delete his/her messages only, not each others.
 8. User can at a given time, can view only at the most 15 messages at a time in a particular room. To view more messages, he/she has to click on Load more button. User is automatically scrolled down, whenever he/she adds new message.
+9. Admin users can broadcast messages and send notifications to other users. Other users can see a button on top right corner, asking for the permission to broadcast messages. If he/she confirms YES, then he/she can also broadcast messages.
 
 https://chat-web-app-ebca8.web.app/
