@@ -9,12 +9,12 @@ import 'firebase/functions';
 import { isLocalhost } from './helpers';
 
 const config = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: 'chat-web-app-ebca8.firebaseapp.com',
   projectId: 'chat-web-app-ebca8',
   storageBucket: 'chat-web-app-ebca8.appspot.com',
   messagingSenderId: '978358535847',
-  appId: process.env.FIREBASE_APP_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
   databaseURL: 'https://chat-web-app-ebca8-default-rtdb.firebaseio.com/',
 };
 
@@ -31,7 +31,7 @@ export const messaging = firebase.messaging.isSupported()
 
 if (messaging) {
   messaging.usePublicVapidKey(
-    process.env.PUBLIC_VALID_KEY
+    process.env.REACT_APP_PUBLIC_VALID_KEY
   );
 
   messaging.onMessage(({ notification }) => {
