@@ -1,9 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import { Loader } from 'rsuite';
+
 import ChatTop from '../../components/chat-window/top';
-import Messages from '../../components/chat-window/messages';
 import ChatBottom from '../../components/chat-window/bottom';
+import Messages from '../../components/chat-window/messages';
 import { useRooms } from '../../context/rooms.context';
 import { CurrentRoomProvider } from '../../context/current-room.context';
 import { transformToArr } from '../../misc/helpers';
@@ -27,13 +28,16 @@ const Chat = () => {
   const { name, description } = currentRoom;
 
   const admins = transformToArr(currentRoom.admins);
+  const fcmUsers = transformToArr(currentRoom.fcmUsers);
   const isAdmin = admins.includes(auth.currentUser.uid);
+  const isReceivingFcm = fcmUsers.includes(auth.currentUser.uid);
 
   const currentRoomData = {
     name,
     description,
     admins,
     isAdmin,
+    isReceivingFcm,
   };
 
   return (
