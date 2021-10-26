@@ -29,7 +29,7 @@ export const messaging = firebase.messaging.isSupported()
 
 if (messaging) {
   messaging.usePublicVapidKey(
-    'BLs_I-HQyrAuUJJh8H3U0vtHGhVhXLMqoVoomeNL90GMKm0-o7sSoN9CJYRiBAVz-Yi7ZAni8mKateJfDwodTnw'
+    'BNk_-mqhssIk6pl106i_OYSW3D-G9nkO2dU__ZKkCjou_GAsdSTmenpP3KW6F6ih6lQVrL1d-khb9IXkZgxxhVc'
   );
 
   messaging.onMessage(({ notification }) => {
