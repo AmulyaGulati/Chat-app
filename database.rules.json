@@ -32,6 +32,7 @@
       }
     },
     "fcm_tokens": {
+      ".indexOn": "roomId",
       "$token_id": {
         ".read": false,
         ".write": "newData.val()===auth.uid"
