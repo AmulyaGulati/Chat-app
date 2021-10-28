@@ -1,4 +1,3 @@
-import process from 'process';
 import { Notification as Toast } from 'rsuite';
 import firebase from 'firebase/app';
 import 'firebase/auth';
@@ -9,16 +8,15 @@ import 'firebase/functions';
 import { isLocalhost } from './helpers';
 
 const config = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  apiKey: 'AIzaSyDYddupMWra5vmun6udJvtrH8k1FkgifA8',
   authDomain: 'chat-web-app-ebca8.firebaseapp.com',
   projectId: 'chat-web-app-ebca8',
   storageBucket: 'chat-web-app-ebca8.appspot.com',
   messagingSenderId: '978358535847',
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  appId: '1:978358535847:web:29e6c0873726ad613e7d82',
   databaseURL: 'https://chat-web-app-ebca8-default-rtdb.firebaseio.com/',
 };
 
-console.log(process.env.FIREBASE_API_KEY)
 const app = firebase.initializeApp(config);
 export const auth = app.auth();
 export const database = app.database();
@@ -31,7 +29,7 @@ export const messaging = firebase.messaging.isSupported()
 
 if (messaging) {
   messaging.usePublicVapidKey(
-    process.env.REACT_APP_PUBLIC_VALID_KEY
+    'BNk_-mqhssIk6pl106i_OYSW3D-G9nkO2dU__ZKkCjou_GAsdSTmenpP3KW6F6ih6lQVrL1d-khb9IXkZgxxhVc'
   );
 
   messaging.onMessage(({ notification }) => {
